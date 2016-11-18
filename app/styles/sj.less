@@ -1,0 +1,16 @@
+@a:100px;
+@a:200px;
+.a{box-shadow:0 0 5px #f00}
+.ccc(@w,@h){
+    width:@w;
+    height:@h;
+   }
+.rem(@w,@h){
+    width:@w/2/20;
+    height:@h/2/20;
+}
+#divone{
+   .rem(1000rem,1000rem);   
+   background:#f00
+}
+

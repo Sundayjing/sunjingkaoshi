@@ -1,0 +1,8 @@
+.a {
+  box-shadow: 0 0 5px #f00;
+}
+#divone {
+  width: 25rem;
+  height: 25rem;
+  background: #f00;
+}

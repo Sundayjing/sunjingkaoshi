@@ -32,7 +32,18 @@ module.exports = function (grunt) {
     yeoman: appConfig,
 
     // Watches files for changes and runs tasks based on the changed files
+    less: {
+ 			 development: { 	 
+    			files: {
+      				'app/styles/sj.css': 'app/styles/sj.less'
+   				   }
+    	  	}
+ 			 },
     watch: {
+    	less:{
+    		files: ['app/styles/sj.less'],
+        tasks: ['less']
+    	},
       bower: {
         files: ['bower.json'],
         tasks: ['wiredep']
@@ -433,6 +444,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
+    	'less',
       'clean:server',
       'wiredep',
       'concurrent:server',

@@ -13,6 +13,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sj.css">
     <!-- endbuild -->
   </head>
   <body ng-app="yoApp">
@@ -21,11 +22,20 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    
+   <!-- 
 	<button ui-sref="one" style="background: #FFB6C1;color: white;">one</button>
 	<button ui-sref="two" style="background: #FFB6C1;color: white;">two</button>
 	<div ui-view></div>
-
+	<div id="divone"></div>
+	<div ng-controller="login">
+		<sj data='mdata' b="1"></sj>
+	  <sj data='mdata' b="2"></sj>		
+	</div>-->
+	<div ng-controller="login">
+		<sj data="mdata" data1="adata">
+			 
+		</sj>
+	</div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      
 
@@ -43,6 +53,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+       <!-- <script src="scripts/zidingyi.js"></script>-->
+        <script src="scripts/zidingyikaoshi.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/one.js"></script>
         <script src="scripts/controllers/two.js"></script>
